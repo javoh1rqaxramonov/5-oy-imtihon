@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imtihon</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="container">
+        <div class="start">
+          <div class="header">
+            <div class="header_left">
+              <img src="./images/iconoir_book.svg" alt="kitob bor" />
+            </div>
+            <div class="header_right">
+              <div class="header_left_inside">
+                <select id="header_select">
+                  <option class="serif" value="serif">serif</option>
+                  <option class="mono" value="monospace">monospace</option>
+                  <option value="sans-serif" >Sans serif</option>
+                  <option class="sans-serif"  value="inter">Inter</option>
+                </select>
+              </div>
+              <div
+                class="line"
+                style="width: 1px; height: 32px; background-color: #e9e9e9"
+              ></div>
+              <div class="header_right_inside">
+                <div class="header_right_checkbox">
+                  <input type="checkbox" class="checkbox" id="toggle_button" />
+                </div>
+                <div class="header_right_img">
+                  <svg id="header_right_img_moon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 10.449C0.998458 12.8283 1.80169 15.1383 3.27914 17.0033C4.75659 18.8683 6.82139 20.1788 9.13799 20.7218C11.4545 21.2647 13.8866 21.0082 16.039 19.994C18.1912 18.9797 19.9373 17.2673 20.9931 15.1352C11.5442 15.1352 6.85799 10.4479 6.85799 1C5.09842 1.87311 3.61767 3.22033 2.58266 4.88981C1.54765 6.5593 0.999502 8.48469 1 10.449Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form id="form">
+            <div class="first_one">
+              <div class="first_one_inside">
+                <input
+                  type="text"
+                  id="first_one_inside_input"
+                  placeholder="Enter the word..."
+                />
+                <img
+                  src="./images/iconoir_search.svg"
+                  alt="search"
+                  id="first_one_inside_search"
+                  style="width: 15.5px; height: 15.5px"
+                />
+              </div>
+            </div>
+          </form>
+          <div id="undefined_word" style="display: none;" >
+            <img style="width: 64px;height: 64px; " src="images/smile.png">
+            <h3>No Definitions Found</h3>
+            <h4>Sorry pal, we couldn't find definitions for the word you were looking for. You can try the search again at later time or head to the web instead.</h4>
+          </div>
+          <p id="empty_input" style="display: none;">Whoops, can’t be empty…</p>
+          <div id="second_one_main">
+          </div>  
+        </div>
+      </div>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
